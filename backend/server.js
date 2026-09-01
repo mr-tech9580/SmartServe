@@ -12,7 +12,17 @@ const app = express();
 
 // 4. Middleware: allow Express to understand incoming JSON request bodies
 
-app.use(cors());
+import cors from "cors";
+
+app.use(
+  cors({
+    origin: [
+      "http://localhost:3000",
+      "https://smart-serve-f9u8.vercel.app",
+    ],
+    credentials: true,
+  })
+);
 app.use(express.json());
 
 // 4b. Wire up our auth routes — anything starting with /api/auth
