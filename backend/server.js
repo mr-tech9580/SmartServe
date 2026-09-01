@@ -6,14 +6,12 @@ require('dotenv').config();
 // 2. Import Express and Mongoose
 const express = require('express');
 const mongoose = require('mongoose');
-// const cors=require('cors');
+const cors = require('cors');
+
 // 3. Create an "app" — this represents our whole server
 const app = express();
 
 // 4. Middleware: allow Express to understand incoming JSON request bodies
-
-import cors from "cors";
-
 app.use(
   cors({
     origin: [
