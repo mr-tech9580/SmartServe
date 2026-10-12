@@ -3,6 +3,7 @@
 // Severity dominates the score. These weights are spaced far apart on purpose,
 // so wait-time can only ever nudge tickets within the same severity band —
 // never let a "low" ticket outrank a "critical" one.
+
 const SEVERITY_WEIGHTS = {
   critical: 100,
   high: 75,

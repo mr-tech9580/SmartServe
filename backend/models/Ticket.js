@@ -32,8 +32,8 @@ const ticketSchema = new mongoose.Schema({
     default: 'open',
   },
   createdBy: {
-    type: mongoose.Schema.Types.ObjectId, // this is HOW we reference another document
-    ref: 'User',                           // tells Mongoose WHICH model it points to
+    type: mongoose.Schema.Types.ObjectId,    // this is HOW we reference another document
+    ref: 'User',                            // tells Mongoose WHICH model it points to
     required: true,
   },
   assignedTo: {

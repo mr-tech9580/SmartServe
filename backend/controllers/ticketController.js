@@ -19,7 +19,7 @@ const createTicket = async (req, res) => {
       category,
       severity,
       priorityScore,
-      createdBy: req.user.id, // this comes from our "protect" middleware!
+      createdBy: req.user.id,    // this comes from our "protect" middleware!
     });
 
     res.status(201).json({
